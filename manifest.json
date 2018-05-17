@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "GitOld",
+    "version": "1.0",
+    "description": "Github com a versão tradicional (sem a ***** do float:left)",
+
+    "icons": {
+      "48": "icon48.png",
+  		"128": "icon128.png"
+    },
+
+    "page_action": {
+        "default_icon": {
+          "19" : "icon19.png",
+          "38" : "icon38.png"
+        },
+        "default_title": "GitOld"
+    },
+
+
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "declarativeContent"
+    ],
+
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+
+
+    "content_scripts": [ {
+        "js": [ "inject/jquery.js", "inject/gitOld.js" ],
+        "css": [ "inject/gitOld.css" ],
+        "matches": [ "https://*.github.com/*" ]
+    } ]
+}
