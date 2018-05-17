@@ -15,6 +15,8 @@ Google chrome extension for github stay with the dashboard on the right side
 
 * Your extension should appear on the dashboard as if you had it installed at that time.
 
+## Look this
+
 * Not Extension
 
 ![Not Extension](assets/not_extension.PNG)
