@@ -1,5 +1,5 @@
-# chrome_extension_git_dashboard_right
-Google chrome extension for github stay with the dashboard on the right side
+# chrome_extension_custom_github
+Google chrome extension for custom github
 
 ## To use it
 
